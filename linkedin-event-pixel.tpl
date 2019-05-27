@@ -114,12 +114,12 @@ ___SANDBOXED_JS_FOR_WEB_TEMPLATE___
 
 // Initiate the API
 const sendPixel = require('sendPixel');
+const log = require('logToConsole');
 
 // Assemble the tracking URL
 var trackingUrl = 'https://dc.ads.linkedin.com/collect/?'+'pid=' + data.partnerId +'&'+ 'conversionId=' + data.conversionId +'&fmt=gif'; 
 
-// Add log capabilities for testing
-var log = require('logToConsole');
+// Logs for testing
 log(trackingUrl); 
 log('data =', data);
 
@@ -132,4 +132,4 @@ data.gtmOnSuccess();
 
 ___NOTES___
 
-Created on 5/26/2019, 6:44:10 PM
+Created on 5/27/2019, 2:13:23 PM

@@ -126,9 +126,6 @@ log('data =', data);
 // Send the pixel
 sendPixel(trackingUrl,data.gtmOnSuccess,data.gtmOnFailure); 
 
-// Call data.gtmOnSuccess when the tag is finished.
-data.gtmOnSuccess();
-
 
 ___NOTES___
 
